@@ -1,38 +1,276 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IBM Plex Sans;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.input-search {
+  position: relative;
+}
+
+.input-search i {
+  position: absolute;
+}
+
+.navsty {
+  height: 72px !important;
+}
+
+.search {
+  padding: 10px;
+  top: 4px;
+  left: 15px;
+  color: #7A7A7A;
+}
+
+#search-box::-webkit-input-placeholder {
+  font-size: 14px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#search-box {
+  background-color: #F2F2F2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.A {
+  color: #27A365;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.R {
+  color: #5c5d5d;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.O {
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.account {
+  font-size: 16px;
+}
+
+
+.main-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('./components/images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 440px;
+}
+
+.main-banner .text {
+  font-size: 36px;
+}
+
+.main-banner .para {
+  font-size: 18px;
+}
+
+.head li:hover {
+  padding-bottom: 0px;
+  border-bottom: 1.5px solid black;
+}
+
+.head button.post {
+  background-color: #EDEEF0;
+}
+
+.filter button {
+  color: #212529;
+  font-weight: 500;
+  background: #F1F3F5;
+
+}
+
+.card-footer button {
+  background-color: #EDEEF0;
+}
+
+.exclamation p {
+  font-size: 12px;
+}
+
+.main-banner {
+  position: relative;
+}
+
+.upper {
+  position: absolute;
+  z-index: 100;
+}
+
+.leave {
+  float: right;
+  top: 0px;
+  font-size: 12px;
+}
+
+.info small {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.visit {
+  color: #E56135;
+}
+
+.job {
+  color: #02B875;
+
+}
+
+
+.desk .modal-dialog {
+  max-width: 736px !important;
+}
+
+.modal-header.desk {
+  background: #EFFFF4;
+
+}
+
+.modal-header p {
+  font-size: 14px;
+}
+
+.modal-cl {
+  position: absolute;
+  top: -40px;
+  left: 695px;
+  color: #EDEEF0;
+}
+
+.sign {
+  font-size: 11px;
+}
+
+.pass {
+  position: relative;
+}
+
+.pass i {
+  position: absolute;
+  top: 8px;
+  margin-left: 320px;
+}
+
+.pass i.eye-sm {
+  padding: absolute;
+  top: 10px;
+  margin-left: 430px;
+}
+
+.create {
+  font-size: 13px;
+}
+
+.follow {
+  background: #EDEEF0;
+
+}
+
+.follow:focus {
+  outline: 0 !important;
+}
+
+hr {
+  border: 1px solid #E0E0E0
+}
+
+.head-hr {
+  border: 0.4px solid #B8B8B8
+}
+
+input.loc {
+  border: 0;
+}
+
+input.loc:focus {
+  outline: none;
+}
+
+.btn-block-fb {
+  width: 337.2px;
+}
+
+.btn-block-fb-sm {
+  width: 316px;
+}
+
+.pen i img {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.mobi .modal-dialog {
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: 0;
+  width: 100% !important;
+  height: 462px !important;
+  margin: 0 !important;
+}
+
+.mobisign .modal-dialog {
+  position: fixed;
+  top: 138px;
+  right: auto;
+  left: auto;
+  bottom: 0;
+  width: 100% !important;
+  height: 500px !important;
+  margin: 0 !important;
+}
+
+.ul {
+  text-decoration: underline;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #5C5C5C;
+  font-size: 14px !important;
+}
+
+.pl {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.dot {
+  font-weight: 900;
+  color: #212529;
+}
+
+.ttext {
+  width: 280px;
+}
+
+input {
+  background-color: #F7F8FA !important;
+}
+
+@media screen and (min-width:768px) {
+  .ttext {
+    width: 600px;
   }
 }
